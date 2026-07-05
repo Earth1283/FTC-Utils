@@ -41,6 +41,10 @@ Then answer "yes" when it asks if you want to begin. Answer "yes" again when it 
 
 If it can't find `adb`, it will ask you, an FTC team member, to locate a binary on your own filesystem by hand. Good luck.
 
+## Don't have a Control Hub? There's a lie for that.
+
+See [`fake-adb/`](fake-adb/) — a fake `adb` binary that answers every question this script asks with the exact string it wants to hear, and roots absolutely nothing. For demos, talks, and lying to pit judges.
+
 ## Roadmap / Prophecy
 
 This repo is not done being unhinged. More tools are coming. This is Volume 1 in what will presumably become a shrine of increasingly deranged FTC utilities — scripts that do things to Control Hubs, Driver Stations, and possibly REV hardware that the sanctioning body has strong feelings about. Watch this space. Or don't. It'll find you anyway, probably during an actual match.
