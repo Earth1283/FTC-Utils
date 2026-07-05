@@ -5,5 +5,6 @@ A growing pile of Python tools for doing questionable things to your FTC robot. 
 ## Tools
 
 - [`control-hub-rooter`](control-hub-rooter/) - roots your Control Hub over ADB. No undo button. Read its README before you touch it.
+- [`rev-hub-jailbreak`](rev-hub-jailbreak/) - talks raw Lynx protocol to your Expansion Hub, no Robot Controller app required. Probes undocumented opcodes. No firmware flashing.
 
 More tools incoming. This repo only gets weirder from here.
