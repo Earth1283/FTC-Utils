@@ -144,7 +144,7 @@ def main():
 
     # Then, enable port 5555 for ADB
     with console.status("[blue]Enabling TCP/IP mode on port 5555...", spinner="aesthetic"):
-        tcpip_result = adb(adb_path, "tcpip", "5555")
+        tcpip_result = str(adb(adb_path, "tcpip", "5555"))
     if "restarting in tcp" not in tcpip_result.lower():
         console.print(
             Panel(
