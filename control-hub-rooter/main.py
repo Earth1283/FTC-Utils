@@ -197,6 +197,7 @@ def main():
     console.print("[#87ceeb]Checking one last time if we really got root...")
     with console.status("[blue]Verifying root...", spinner="aesthetic"):
         whoami_result = adb(adb_path, "shell", "whoami")
+        whoami_result = whoami_result.lower().strip()
     if whoami_result == "root":
         console.print("[#90ee90]We have verified that we are root.")
     else:
