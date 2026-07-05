@@ -123,7 +123,7 @@ def main():
         console.print("Aborted. Goodbye :)")
         sys.exit(0)
     
-    # Actual buisness logic
+    # Actual business logic
     # First, check active devices
     while True:
         with console.status("[blue]Checking for connected devices...", spinner="aesthetic"):
@@ -145,7 +145,7 @@ def main():
     # Then, enable port 5555 for ADB
     with console.status("[blue]Enabling TCP/IP mode on port 5555...", spinner="aesthetic"):
         tcpip_result = str(adb(adb_path, "tcpip", "5555"))
-    if "restarting in tcp" not in tcpip_result.lower():
+    if "restarting in tcp" not in tcpip_result.lower() and "0" not in tcpip_result.lower():
         console.print(
             Panel(
                 f"[error]Failed to enable TCP/IP mode on port 5555.[/]\nADB said: {tcpip_result}",
