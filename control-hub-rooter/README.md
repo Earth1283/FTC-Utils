@@ -21,7 +21,7 @@ That's it. That's the whole ritual. No undo button. No dry-run flag. Just vibes,
 
 ## Why does this exist
 
-Because somewhere, an FTC team's Control Hub needed something root-only — sysctl tweak, weird sensor driver, forbidden governor setting, who knows — and the normal, sane, competition-legal, sanctioned path was too slow. So now there's a script for that. A whole vibe-coded, rich-console, ANSI-colored ritual for it.
+Because your ADB connection won't persist over reboots, and our team's Type-C port has the reliability of a packet over [IPoAC](https://en.wikipedia.org/wiki/IP_over_Avian_Carriers). And babysitting the rooting process is too tedious for a human to do. Want to learn why? Click [here](https://thethreevirtues.com/) to learn the three virtues of a programmer.
 
 ## ⚠️ things this script will absolutely NOT stop you from doing
 
