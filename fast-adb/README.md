@@ -36,3 +36,6 @@ python main.py
 ```
 
 Needs an `adb` binary somewhere under the current directory (this folder ships one) and, for `check`/`deploy`, a `gradlew` somewhere under the current directory too — point it at your FTC project root.
+
+## Why does this exist
+Because I am profoundly disappointed at Android Studio's handling of ADB (and as a result, I no longer use Android Studio; I exclusively use IntelliJ IDEA). Additionally, Google engineers think it's a great idea to persist dead connections to the robot without an explicit `./adb disconnect`, so every match you get to watch `device offline` mock you until you remember to kill the server yourself. And don't get me started on wifi adb dropping mid-match for no reason, silently, with zero indication anything went wrong until your next `install` hangs forever.
